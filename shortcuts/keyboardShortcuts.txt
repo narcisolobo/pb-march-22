@@ -1,4 +1,4 @@
-                           PC                | Mac
+                        PC                   | Mac
 Cut:                    Ctrl + x             | Cmd + x
 Copy:                   Ctrl + c             | Cmd + c
 Paste:                  Ctrl + v             | Cmd + v
