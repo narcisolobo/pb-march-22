@@ -1,3 +1,5 @@
+Keyboard Shortcuts
+                        
                         PC                   | Mac
 Cut:                    Ctrl + x             | Cmd + x
 Copy:                   Ctrl + c             | Cmd + c
