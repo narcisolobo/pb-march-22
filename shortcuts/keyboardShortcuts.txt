@@ -1,0 +1,17 @@
+                           PC                | Mac
+Cut:                    Ctrl + x             | Cmd + x
+Copy:                   Ctrl + c             | Cmd + c
+Paste:                  Ctrl + v             | Cmd + v
+Undo:                   Ctrl + z             | Cmd + z
+Save:                   Ctrl + s             | Cmd + s
+Search:                 Ctrl + f             | Cmd + f
+Switch apps:            alt + Tab            | Cmd + Tab
+
+Select next instance:   Ctrl + d             | Cmd + d
+Insert cursor:          alt + click          | opt + click
+Word wrap:              alt + z              | opt + z
+Move line(s)            alt + arrow          | opt + arrow
+Move and copy line(s)   shift + alt + arrow  | shift + opt + arrow
+Close editor:           Ctrl + w             | Cmd + w
+Toggle explorer:        Ctrl + b             | Cmd + b
+Toggle terminal:        Ctrl + `             | Ctrl + `
