@@ -42,3 +42,5 @@ Github is an internet host for git repositories. Among other features, Github al
  8. Click publish. If this is the first time you are trying to push a local git repo to Github, you will be asked to give authorization. Switch to your browser to do that. Just click through and accept at every point they ask.
  9. Make sure you choose the public option if you want your instructor (or anyone else) to be able to view your repo on Github.
  10. After it's done pushing, you can view your repo on Github.
+
+### How to 
