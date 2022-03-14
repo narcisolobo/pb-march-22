@@ -1,0 +1,93 @@
+<!-- index.html is a naming convention - it's used for the "landing page" of your site -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Forms and Tables</h1>
+    <h2>Let's learn about them.</h2>
+    <!-- relative path -->
+    <!-- always have an alt attribute filled in with a description of your image -->
+    <img src="./spider-man.jpeg" alt="Spider-Man from No Way Home">
+    <!-- action is not important until Python -->
+    <form action="">
+        <div>
+            <label for="firstName">First Name:</label>
+            <!-- name attribute is not important until Python -->
+            <input type="text" name="firstName" id="firstName">
+        </div>
+        <div>
+            <label for="lastName">Last Name:</label>
+            <!-- name attribute is not important until Python -->
+            <input type="text" name="lastName" id="lastName">
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <!-- value is what will be submitted to back end -->
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="non-binary">Non-Binary</option>
+                <option value="not-saying">Prefer Not to Say</option>
+            </select>
+        </div>
+        <div>
+            <h2>How did you hear about us?</h2>
+            <div>
+                <!-- all radios in the same family must have the same name -->
+                <!-- they also need values -->
+                <input type="radio" name="hear-about" id="word-of-mouth" value="word-of-mouth">
+                <label for="word-of-mouth">Word of mouth</label>
+            </div>
+            <div>
+                <input type="radio" name="hear-about" id="advertisement" value="advertisement">
+                <label for="advertisement">Advertisement</label>
+            </div>
+            <div>
+                <input type="radio" name="hear-about" id="referral" value="referral">
+                <label for="referral">Referral</label>
+            </div>
+        </div>
+        <div>
+            <label for="comments">Comments:</label><br>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+        <!-- submit button must be a child of the form element -->
+        <input type="submit" value="SUBMIT">
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kermit the Frog</td>
+                <td>35</td>
+                <td>Swamp</td>
+            </tr>
+            <tr>
+                <td>Fozzy Bear</td>
+                <td>39</td>
+                <td>On Stage</td>
+            </tr>
+            <tr>
+                <td>Miss Piggy</td>
+                <td>25</td>
+                <td>Dressing Room</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
