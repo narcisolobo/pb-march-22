@@ -1,0 +1,18 @@
+HTML - WHAT IS IT EVEN?
+It stands for HyperText Markup Language
+
+HTML should be responsible for the structure of our website.
+CSS should be responsible for the style of our website.
+JS should be responsible for the functionality of our website.
+
+Parts of an HTML tag:
+
+1. HTML Element
+2. Attribute(s) - Customizes the element
+3. Value of Attribute - How we are customizing the element
+
+<meta charset="UTF-8">
+
+Get an HTML boilerplate by typing an exlamation point "!" (without the quotes) and hitting enter.
+
+Tags have relationships. Parents, children, and siblings.
