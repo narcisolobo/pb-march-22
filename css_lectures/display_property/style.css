@@ -1,0 +1,41 @@
+/*
+
+BOX MODEL
+Every HTML element has its own box model.
+There are four components in the box model:
+
+1. Content
+2. Padding
+3. Border
+4. Margin
+
+* Block elements span the entire width of their parents. Width and height have effect. No neighbors
+* Inline-block elements allow side-by-side neighbors. Width and height have effect. Yes neighbors
+* Inline elements are on the same line as neighbors by default. Width and height have no effect. Yes neighbors
+
+*/
+
+.container {
+  /* background-color: lightblue; */
+}
+
+#left {
+  background-color: aquamarine;
+}
+
+#right {
+  background-color: darkkhaki;
+}
+
+#left, #right {
+  width: 500px;
+  min-height: 200px;
+  display: inline-block;
+}
+
+a {
+  /* display: inline-block; */
+  background-color: coral;
+  width: 200px;
+  height: 200px;
+}

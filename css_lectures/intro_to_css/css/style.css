@@ -20,7 +20,7 @@ h1 {
   padding: 10px;
 }
 
-h2 {
+h2, h3 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -34,9 +34,15 @@ h2 {
   color: cadetblue;
 }
 
+ul {
+  background-color: cyan;
+}
+
 .moon-knight-pic {
   /* border takes a width, style, and color */
   border: 5px solid blueviolet;
+  width: 500px;
+  float: left;
 }
 
 table {
@@ -44,7 +50,30 @@ table {
   border-right: 3px dashed red;
 }
 
+td, th {
+  border-bottom: 3px dashed red;
+  padding: 5px;
+}
+
+th {
+  border-top: 3px dashed red;
+}
+
+.border-right {
+  border-right: 3px dashed red;
+}
+
 /* compound selector */
 h1, h2, h3 {
   text-align: center;
+}
+
+ul, #content {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#content {
+  width: 960px;
+  background-color: darksalmon;
 }
