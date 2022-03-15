@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to CSS</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- You should only have one h1 element for SEO -->
+    <h1>YO SEESO</h1>
+    <ul>
+        <li><a href="#welcome">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+
+    <!-- HTML Rule - you cannot repeat the same ID's -->
+    <!-- You can repeat classes -->
+
+    <!-- home -->
+    <h2 id="welcome">Welcome to Yo Seeso!</h2>
+    <img class="moon-knight-pic" src="./images/moon-knight.jpeg" alt="Moon Knight">
+    
+    <!-- about -->
+    <h2 id="about" class="section-title">About Yo Seeso</h2>
+    <p><strong>Yo Seeso</strong> is Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, ex iste esse ab eius optio enim? Possimus non accusamus fugit reiciendis, laborum omnis est alias dolores quam pariatur dolorem eos, odit iure quae quaerat unde iste autem reprehenderit aliquam! <a href="https://www.sublimewithrome.com/">Labore at unde molestias</a> omnis aliquam!</p>
+    <p>Nulla eum harum distinctio nobis delectus ipsum dolor enim et libero assumenda cumque accusantium adipisci dolorum expedita doloremque perferendis, in voluptas nesciunt vitae odit dolores maiores itaque odio sit? Repellendus, ullam commodi rem at perspiciatis odio quam. Nihil illo, quae deleniti adipisci rem optio eveniet? Deserunt omnis corrupti veritatis blanditiis ratione officiis aliquid quos vitae?</p>
+    
+    <!-- services -->
+    <h2 id="services" class="section-title">Yo Seeso Services</h2>
+    <p>Yo Seeso offers an array of services for your Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo earum placeat deserunt veniam et odio cupiditate qui, asperiores saepe est voluptatum! Eos voluptas voluptatem reiciendis amet maiores velit magni, eius commodi numquam aperiam molestiae rerum!</p>
+    <p>Aperiam atque maiores beatae quaerat officia, optio tenetur nulla eius ab obcaecati qui commodi explicabo quam natus temporibus amet illum pariatur. Voluptates totam natus aliquam ad libero velit excepturi, dolores sit voluptate, molestias nostrum a temporibus tempora iure obcaecati? Dignissimos temporibus atque maxime quae! Molestiae quae voluptatem rerum, consequatur quisquam ipsa architecto. Nam quia repellat maxime alias, perspiciatis pariatur laborum placeat et, nostrum tempore quis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, id? Voluptates nobis rerum ullam quae ipsa accusantium asperiores ea temporibus quaerat illo aut eius voluptatibus sit, maiores hic tempora dolor!</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Project</th>
+                <th>Client</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cyberpunk 2077</td>
+                <td>CD Projekt Red</td>
+                <td><a href="https://www.amazon.com/Funko-Pop-Games-Silverhand-Multicolor/dp/B07YQH2M32">Johnny Silverhand Funko Pop</a></td>
+            </tr>
+            <tr>
+                <td>Moon Knight</td>
+                <td>Marvel</td>
+                <td><a href="https://www.amazon.com/Moon-Knight-Walgreens-Exclusive-Compatible/dp/B07RGSDTRS">Fist Of Khonshu Pop</a></td>
+            </tr>
+            <tr>
+                <td>My Hero Academia</td>
+                <td>Bones, Inc.</td>
+                <td><a href="https://www.amazon.com/Funko-Pop-Animation-Academia-Tokoyami/dp/B07PZDWYFB">Tokoyami Pop</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- contact -->
+    <form action="mailto:nlobo@codingdojo.com">
+        <h3 id="contact">Contact Me</h3>
+        <label for="comments">Comments</label><br>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="CONTACT">
+    </form>
+</body>
+</html>

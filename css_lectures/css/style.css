@@ -1,0 +1,50 @@
+/*
+
+Parts of a CSS Rule
+
+1. Selector - the element you want to style, followed by curly braces
+2. Property - the aspect you want to change about the element, followed by a colon
+3. Value - how you want to change that aspect, followed by semicolon
+
+Types of selectors
+1. The element tag itself
+2. The ID selector (#)
+3. The class selector (.)
+
+*/
+
+h1 {
+  color: darkmagenta;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(196, 196, 196);
+  padding: 10px;
+}
+
+h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ID Selector */
+#welcome {
+  color: darkblue;
+}
+
+/* Class selector */
+.section-title {
+  color: cadetblue;
+}
+
+.moon-knight-pic {
+  /* border takes a width, style, and color */
+  border: 5px solid blueviolet;
+}
+
+table {
+  border-left: 3px dashed red;
+  border-right: 3px dashed red;
+}
+
+/* compound selector */
+h1, h2, h3 {
+  text-align: center;
+}
