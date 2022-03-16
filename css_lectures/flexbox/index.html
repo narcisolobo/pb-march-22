@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <div class="container flex">
+            <h1>Intro to Flexbox</h1>
+            <ul id="nav-menu" class="flex">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Identify which items must be side-by-side -->
+    <!-- find their immediate parent -->
+    <!-- if there isn't an immediate, you must create one -->
+    <!-- put display: flex on the parent -->
+    <div class="container parent">
+        <img src="./albums/2pac.jpeg" alt="2 Pac">
+        <img src="./albums/adele.jpg" alt="Adele">
+        <img src="./albums/eminem.jpeg" alt="Eminem">
+        <img src="./albums/faded.jpg" alt="Faded">
+        <img src="./albums/kendrick.jpg" alt="Kendrick">
+    </div>
+</body>
+</html>

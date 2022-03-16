@@ -1,0 +1,58 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  /* look this up if you're interested */
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  color: white;
+}
+
+/* 
+
+With flex, you must put the property and value in the PARENT.
+The parent tells its children how to behave.
+
+*/
+
+.parent {
+  background-color: lightcoral;
+  min-height: 350px;
+  /* flex container */
+  display: flex;
+  /* governs the horizontal axis */
+  justify-content: space-evenly;
+  /* governs the vertical axis */
+  align-items: flex-end;
+}
+
+/* flex items */
+img {
+  width: 250px;
+}
+
+#nav {
+  background-color: darkslategray;
+  padding: 20px;
+}
+
+#nav-menu {
+  list-style: none;
+  color: antiquewhite;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.container {
+  width: 70%;
+  /* magic div centerer */
+  margin: 0 auto;
+}
