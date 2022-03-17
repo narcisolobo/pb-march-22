@@ -44,7 +44,7 @@ Print integers from 0 to 255, and with each integer print the sum so far.
 
 function printIntsAndSum0To255() {
   var sum = 0;
-  for (var i = 0; i <=255; i++) {
+  for (var i = 0; i <= 255; i++) {
     console.log('int: ' + i);
     sum += i;
     console.log('sum so far: ' + sum);
@@ -69,8 +69,8 @@ function printArrayVals(arr) {
 
 console.log('********************');
 console.log('PRINT ARRAY VALS');
-var testArr = ['blue', 5, 9, -2, false];
-printArrayVals(testArr);
+var testArr4 = ['blue', 5, 9, -2, false];
+printArrayVals(testArr4);
 
 /* 
 5. Find and Print Max
@@ -90,8 +90,8 @@ function printMaxOfArray(arr) {
 
 console.log('********************');
 console.log('PRINT MAX OF ARRAY');
-var testArr2 = [5, 23, -5, 61, 2, 10];
-printMaxOfArray(testArr2);
+var testArr5 = [5, 23, -5, 61, 2, 10];
+printMaxOfArray(testArr5);
 
 /* 
 6. Get and Print Average
@@ -104,40 +104,144 @@ function printAverageOfArray(arr) {
   for (var i = 0; i < arr.length; i++) {
     sum += arr[i];
   }
-  console.log('Average: ' + sum/arr.length);
+  console.log('Average: ' + sum / arr.length);
 }
 
 console.log('********************');
 console.log('PRINT AVERAGE OF ARRAY');
-var testArr3 = [1, 2, 3, 4]
-printAverageOfArray(testArr3);
+var testArr6 = [1, 2, 3, 4]
+printAverageOfArray(testArr6);
 
-/* 
+/*
 7. Array with Odds
 returnOddsArray1To255()
-Create an array with all the odd integers between 1 and 255 (inclusive).  
+Create an array with all the odd integers between 1 and 255 (inclusive).
+*/
 
+function returnOddsArray1To255() {
+  var oddsArr = [];
+  for (var i = 0; i <= 255; i++) {
+    if (i % 2 != 0) {
+      oddsArr.push(i);
+    }
+  }
+  return oddsArr;
+}
+
+console.log(returnOddsArray1To255());
+
+/*
 8. Square the Values
 squareArrayVals(arr)
-Square each value in a given array, returning that same array with changed values. 
+Square each value in a given array, returning that same array with changed values.
+*/
 
+function squareArrayVals(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] *= arr[i];
+  }
+  return arr;
+}
+
+var testArr8 = [1, 2, 3, 4]
+console.log(squareArrayVals(testArr8));
+
+/*
 9. Greater than Y
 returnArrayCountGreaterThanY(arr, y)
 Given an array and a value Y, count and print the number of array values greater than Y.
+*/
 
+function returnArrayCountGreaterThanY(arr, y) {
+  var count = 0;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > y) {
+      count++;
+    }
+  }
+  return count;
+}
+
+var testArr9 = [-6, 88, 3, 71, 34, -23, 10];
+var val = 50;
+console.log(returnArrayCountGreaterThanY(testArr9, val));
+
+/*
 10. Zero Out Negative Numbers
 zeroOutArrayNegativeVals(arr)
-Return the given array, after setting any negative values to zero. 
+Return the given array, after setting any negative values to zero.
+*/
 
+function zeroOutArrayNegativeVals(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {
+      arr[i] = 0;
+    }
+  }
+  return arr;
+}
+
+var testArr10 = [-6, 32, -10, 5, 23, -88]
+console.log(zeroOutArrayNegativeVals(testArr10));
+
+/*
 11. Max, Min, Average
 printMaxMinAverageArrayVals(arr)
 Given an array, print the max, min and average values for that array.
+*/
 
+function printMaxMinAverageArrayVals(arr) {
+  var max = arr[0];
+  var min = arr[0];
+  var sum = arr[0];
+  for (var i = 1; i < arr.length; i++){
+    // read arr[i] as "the current element in the array"
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+    // sum = sum + arr[i];
+    sum += arr[i];
+  }
+  console.log('Max: ' + max + ', Min: ' + min + ', Avg: ' + sum/arr.length);
+}
+
+var testArr11 = [10, 5, -4, 3, 88, 100, 32, -5];
+printMaxMinAverageArrayVals(testArr11);
+
+/*
 12. Shift Array Values
 shiftArrayValsLeft(arr)
 Given an array, move all values forward (to the left) by one index, dropping the first value and leaving a 0 (zero) value at the end of the array.
+*/
 
+function shiftArrayValsLeft(arr) {
+  for (var i = 0; i < arr.length; i++){
+    arr[i] = arr[i+1];
+  }
+  arr[arr.length-1] = 0;
+  console.log(arr);
+}
+
+var testArr12 = [1, 2, 3, 4, 5];
+shiftArrayValsLeft(testArr12);
+
+/*
 13. Swap String For Array Negative Values
 swapStringForArrayNegativeVals(arr)
 Given an array of numbers, replace any negative values with the string 'Dojo'.
 */
+
+function zeroOutArrayNegativeVals(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {
+      arr[i] = 'Dojo';
+    }
+  }
+  return arr;
+}
+
+var testArr13 = [-6, 32, -10, 5, 23, -88]
+console.log(zeroOutArrayNegativeVals(testArr13));
