@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* don't worry about the below property just yet */
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#nav {
+  /* 1 value - all four sides */
+  /* 2 values - first is top and bottom, second is left and right */
+  padding: 20px 0;
+  /* background-color: peru; */
+}
+
+.container {
+  width: 960px;
+  /* 1 value - all four sides */
+  /* 2 values - first is top and bottom, second is left and right */
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  transition: all 100ms ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.2);
+}
+
+#content {
+  padding: 20px 0;
+}
+
+body {
+  background-image: linear-gradient(to right top, black, darkgrey);
+}
+
+#welcome-box {
+  background-image: url('./images/moon-knight.jpeg');
+  min-height: 540px;
+  color: white;
+}
+
+#welcome-box, #about-box, #services-box {
+  padding: 20px;
+}
+
+.gradient {
+  background-color: #004d7a;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+p {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.opacity {
+  background-color: white;
+  opacity: .5;
+}
